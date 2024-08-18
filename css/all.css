@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url(css_reset.css);
 
 *,
 *::before,
@@ -7,12 +10,10 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-size: 16px;
     line-height: 1.5;
-    font-family: "Roboto" ,"Noto Sans TC", sans-serif;
-
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
 }
 
 img {
@@ -21,84 +22,124 @@ img {
     vertical-align: middle;
 }
 
-a{
+:root {
+    --primary-color: #650300;
+    --bg-headfoot: #AA0601;
+}
+
+a {
     text-decoration: none;
     display: inline-block;
     color: #FFFFFF;
 }
+
 .d-flex {
     display: flex;
 }
 
-.jucsb{
-    justify-content: space-between;
-}
-
-.aic{
-    align-items: center;
-}
-
-.fz-s {
-    font-size: 20px;
-}
-
-.fz-m {
-    font-size: 36px;
-}
-
-.fz-l {
-    font-size: 48px;
-}
-
-.primary-color{
-    color: #650300  ;
-}
-
-.container{
-    max-width: 1320px; /* 因為盒模型加上padding值，所以會是內容的寬度1296+左右各12px等於1320px */
+.header-container {
+    max-width: 1320px;
     margin: 0 auto;
-    padding: 0px 12px; /* 讓內容不要在縮小時貼齊邊界，透過設計稿的列寬度(24px)去左右各推12px */
+    padding: 0px 12px;
+}
+
+.container {
+    max-width: 1320px;
+    /* 因為盒模型加上padding值，所以會是內容的寬度1296+左右各12px等於1320px */
+    margin: 0 auto;
+    padding: 0px 12px;
+    /* 讓內容不要在縮小時貼齊邊界，透過設計稿的列寬度(24px)去左右各推12px */
 }
 
 .header {
-    background-color: #AA0601;
+    background-color: var(--bg-headfoot);
+    width: 100%;
+    
 }
 
-.logo_img{
+.header-flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1{
+    float:left; /*文字要靠在右邊*/
+}
+
+.h1 a{
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true");
+    background-size: cover;
     width: 80px;
+    height: 48px;
+    display: block;
+    text-indent: 101%; /*讓文字超出範圍*/
+    overflow: hidden; /*超出範圍的隱藏*/
+    white-space: nowrap; /*讓字不會被卡掉，會完整顯示*/
+    margin: 16px 0px;
+}
+
+.logo {
+    width: 80px;
+    margin: 16px 0;
 }
 
 .menu {
-    color: #FFFFFF;
-    gap: 64px;
+    font-size: 20px;
 }
 
-.slider_photo{
-    position: absolute;
-    background-position: center;
-    background-size: center;
-    background-repeat: no-repeat;    
+.menu li {
+    margin-right: 64px;
+    
 }
 
-.cd-flex{
-    display: flex;
-    position: relative;
+.menu li:last-child {
+    margin-right: 0px;
 }
 
-.sl-column{
-    flex-direction: column;    
-    align-items: center;
-    justify-content: center;
+.menu a {
+    padding: 5px 0px;
 }
 
-.logo-text{
-    font-size: 64px;
-    font-weight: bold;
+@media (max-width:767px) {
+    .header-container {
+        padding: 0;
+    }
+    .header-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .menu li {
+        width: 50%;
+        text-align: center;
+        border: 1px solid #FFFFFF;
+        margin: 0;
+    }
 }
 
-.buy{
-    margin-top: 4px;
-    background-color: #AA0601;
-    padding: 6px 12px;
+
+
+@media (max-width:922px) {
+    .container {
+        max-width: 720px;
+        /* 因為盒模型加上padding值，所以會是內容的寬度696+左右各12px等於720px */
+    }
 }
 
+
+@media (max-width:767px) {
+    .container {
+        max-width: 372px;
+        /* 因為盒模型加上padding值，所以會是內容的寬度348+左右各12px等於1320px */
+        padding: 0;
+    }
+}
