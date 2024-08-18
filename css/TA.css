@@ -114,3 +114,28 @@ variables
 /*
 使用者體驗：按鈕要用一些padding讓使用者可以多一點空間點擊
  */
+
+
+ .container {
+    max-width: 1320px;
+    /* 因為盒模型加上padding值，所以會是內容的寬度1296+左右各12px等於1320px */
+    margin: 0 auto;
+    padding: 0px 12px;
+    /* 讓內容不要在縮小時貼齊邊界，透過設計稿的列寬度(24px)去左右各推12px */
+}
+
+@media (max-width:922px) {
+    .container {
+        max-width: 720px;
+        /* 因為盒模型加上padding值，所以會是內容的寬度696+左右各12px等於720px */
+    }
+}
+
+
+@media (max-width:767px) {
+    .container {
+        max-width: 372px;
+        /* 因為盒模型加上padding值，所以會是內容的寬度348+左右各12px等於1320px */
+        padding: 0;
+    }
+}
