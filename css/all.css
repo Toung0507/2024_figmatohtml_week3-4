@@ -52,9 +52,7 @@ a {
 }
 
 .header {
-    background-color: var(--bg-headfoot);
-    width: 100%;
-    
+    background-color: var(--bg-headfoot);  
 }
 
 .header-flex {
