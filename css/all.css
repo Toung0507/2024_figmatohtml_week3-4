@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Roboto" ,"Noto Sans TC", sans-serif;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: #FFFFFF;
+}
+.d-flex {
+    display: flex;
+}
+
+.jucsb{
+    justify-content: space-between;
+}
+
+.aic{
+    align-items: center;
+}
+
+.fz-s {
+    font-size: 20px;
+}
+
+.fz-m {
+    font-size: 36px;
+}
+
+.fz-l {
+    font-size: 48px;
+}
+
+.primary-color{
+    color: #650300  ;
+}
+
+.container{
+    max-width: 1320px; /* 因為盒模型加上padding值，所以會是內容的寬度1296+左右各12px等於1320px */
+    margin: 0 auto;
+    padding: 0px 12px; /* 讓內容不要在縮小時貼齊邊界，透過設計稿的列寬度(24px)去左右各推12px */
+}
+
+.header {
+    background-color: #AA0601;
+}
+
+.logo_img{
+    width: 80px;
+}
+
+.menu {
+    color: #FFFFFF;
+    gap: 64px;
+}
+
+.slider_photo{
+    position: absolute;
+    background-position: center;
+    background-size: center;
+    background-repeat: no-repeat;    
+}
+
+.cd-flex{
+    display: flex;
+    position: relative;
+}
+
+.sl-column{
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-text{
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.buy{
+    margin-top: 4px;
+    background-color: #AA0601;
+    padding: 6px 12px;
+}
+
