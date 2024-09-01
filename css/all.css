@@ -45,17 +45,17 @@ a {
     display: flex;
 }
 
-.container{
+.container {
     max-width: 1320px;
     margin: 0 auto;
     padding: 0px 12px;
 }
 
-.row{
+.row {
     margin: 0px -12px;
 }
 
-.h4{
+.h4 {
     color: var(--primary-color);
     font-size: 48px;
     font-weight: bold;
@@ -64,7 +64,7 @@ a {
     margin-bottom: 48px;
 }
 
-.bgc{
+.bgc {
     background-color: #FBF2F2;
 }
 
@@ -132,13 +132,13 @@ a {
 /* #endregion */
 
 /* #region banner */
-.banner{
+.banner {
     background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
     height: calc(100vh - 80px);
     background-size: cover;
 }
 
-.banner-text{
+.banner-text {
     height: 100%;
     flex-direction: column;
     align-items: flex-end;
@@ -146,16 +146,16 @@ a {
     color: var(--primary-color);
 }
 
-.series-text{
+.series-text {
     font-size: 36px;
 }
 
-.slogan{
+.slogan {
     font-size: 64px;
     font-weight: bold;
 }
 
-.buy{
+.buy {
     margin-top: 10px;
     padding: 6px 12px;
     color: var(--second-color);
@@ -167,21 +167,21 @@ a {
 
 /* #region 用專業的心，做專業的事 */
 
-.four-column{
+.four-column {
     padding: 0px 12px;
     margin-bottom: 80px;
 }
 
-.four-card{
+.four-card {
     text-align: center;
 }
 
-.four-card img{
-    height: 100px;
+.four-card img {
+    max-width: 84px;
     margin-bottom: 18px;
 }
 
-.item_title{
+.item_title {
     font-size: 24px;
     color: var(--primary-color);
     text-align: center;
@@ -189,12 +189,83 @@ a {
     margin-bottom: 8px;
 }
 
-.item_content{
+.item_content {
     text-align: left;
 }
+
 /* #endregion */
 
 /* #region 經典系列鏡框 */
+
+.three-column {
+    padding: 0px 12px;
+}
+
+.three-card-title {
+    padding: 8px 0px 0px 0px;
+    margin-bottom: 80px;
+}
+
+/* #endregion */
+
+/* #region 聯名設計鏡框 */
+
+.joint_namebg {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+    height: 608px;
+}
+
+.two-column img {
+    max-width: 648px;
+    height: 240px;
+}
+
+.joint_title {
+    color: var(--second-color);
+}
+
+.join-item {
+    padding: 0px 8px;
+    background-color: var(--second-color);
+    font-style: italic;
+}
+
+/* #endregion */
+
+/* #region 顧客推薦 */
+.customer {
+    text-align: left;
+    box-shadow: 0px 2px 6px #DEE2E6;
+}
+
+.customer img {
+    max-width: 306px;
+    margin: 0;
+}
+
+.customer-reviews{
+    padding: 16px;
+    
+}
+
+.customer-name {
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+.date {
+    padding-top: 72px;
+    color: #707070;
+}
+
+/* #endregion */
+
+/* #region 聯絡我們 */
+.contact-form{
+    max-width: 636px;
+    margin: 0 auto;
+}
+
 
 /* #endregion */
 
@@ -287,6 +358,7 @@ a {
         font-size: 16px;
         margin-right: 11px;
     }
+
     .social a {
         padding: 0px 4px;
     }
@@ -302,8 +374,8 @@ a {
         padding-top: 20px;
         padding-bottom: 24px;
     }
-    
-    .privacy{
+
+    .privacy {
         flex-direction: column;
         margin-top: 4px;
     }
@@ -312,6 +384,7 @@ a {
         font-size: 16px;
         padding: 4px 0px;
     }
+
     .privacy li:last-child a {
         padding-bottom: 0px;
     }
