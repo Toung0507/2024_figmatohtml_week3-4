@@ -45,7 +45,30 @@ a {
     display: flex;
 }
 
-/* header區塊 */
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0px 12px;
+}
+
+.row{
+    margin: 0px -12px;
+}
+
+.h4{
+    color: var(--primary-color);
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 48px;
+}
+
+.bgc{
+    background-color: #FBF2F2;
+}
+
+/* #region header區塊 */
 
 .h-container {
     max-width: 1320px;
@@ -106,7 +129,76 @@ a {
     }
 }
 
-/* footer區塊 */
+/* #endregion */
+
+/* #region banner */
+.banner{
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
+    height: calc(100vh - 80px);
+    background-size: cover;
+}
+
+.banner-text{
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    color: var(--primary-color);
+}
+
+.series-text{
+    font-size: 36px;
+}
+
+.slogan{
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.buy{
+    margin-top: 10px;
+    padding: 6px 12px;
+    color: var(--second-color);
+    background-color: var(--bg-headfoot);
+    font-weight: medium;
+}
+
+/* #endregion */
+
+/* #region 用專業的心，做專業的事 */
+
+.four-column{
+    padding: 0px 12px;
+    margin-bottom: 80px;
+}
+
+.four-card{
+    text-align: center;
+}
+
+.four-card img{
+    height: 100px;
+    margin-bottom: 18px;
+}
+
+.item_title{
+    font-size: 24px;
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.item_content{
+    text-align: left;
+}
+/* #endregion */
+
+/* #region 經典系列鏡框 */
+
+/* #endregion */
+
+/* #region footer區塊 */
 
 .footer {
     background-color: var(--bg-headfoot);
@@ -225,3 +317,5 @@ a {
     }
 
 }
+
+/* #endregion */
