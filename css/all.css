@@ -266,6 +266,12 @@ a {
     margin: 0 auto;
 }
 
+label{
+    display: block;
+}
+input{
+    max-width: 100%;
+}
 
 /* #endregion */
 
