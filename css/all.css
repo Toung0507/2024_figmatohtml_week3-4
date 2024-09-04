@@ -266,11 +266,27 @@ a {
     margin: 0 auto;
 }
 
-label{
-    display: block;
+.contact-content{
+    margin-bottom: 24px;
+    font-size: 20px;
 }
-input{
-    max-width: 100%;
+
+.label{
+    display: block;
+    padding-bottom: 8px;
+}
+
+.input{
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.label:last-child{
+    display: inline;
+}
+
+.textarea{
+    width: 100%;
 }
 
 /* #endregion */
