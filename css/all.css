@@ -243,9 +243,9 @@ a {
     margin: 0;
 }
 
-.customer-reviews{
+.customer-reviews {
     padding: 16px;
-    
+
 }
 
 .customer-name {
@@ -261,32 +261,55 @@ a {
 /* #endregion */
 
 /* #region 聯絡我們 */
-.contact-form{
+form {
+    padding-bottom: 80px;
+}
+
+.contact-form {
     max-width: 636px;
     margin: 0 auto;
 }
 
-.contact-content{
+.contact-content {
     margin-bottom: 24px;
     font-size: 20px;
 }
 
-.label{
+label,
+input,
+textarea,
+button {
     display: block;
-    padding-bottom: 8px;
 }
 
-.input{
+label {
+    margin-bottom: 8px;
+}
+
+input {
     width: 100%;
     margin-bottom: 16px;
 }
 
-.label:last-child{
+textarea {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.form-privacy {
+    width: auto;
     display: inline;
 }
 
-.textarea{
-    width: 100%;
+button {
+    padding: 16px 176px;
+    margin: 0 auto;
+    background-color: var(--bg-headfoot);
+    color: var(--second-color);
+    margin-top: 48px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 0;
 }
 
 /* #endregion */
