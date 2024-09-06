@@ -39,16 +39,26 @@ a {
     --bg-headfoot: #AA0601;
 }
 
-/* 通用設定 */
+/* #region 通用設定 */
 
 .d-flex {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .container {
     max-width: 1320px;
     margin: 0 auto;
     padding: 0px 12px;
+}
+
+
+@media (max-width:767px) {
+    .container {
+        max-width: 372px;
+        padding: 0;
+    }
 }
 
 .row {
@@ -64,9 +74,17 @@ a {
     margin-bottom: 48px;
 }
 
+@media (max-width:767px) {
+    .h4 {
+        font-size: 24px;
+    }
+}
+
 .bgc {
     background-color: #FBF2F2;
 }
+
+/* #endregion */
 
 /* #region header區塊 */
 
@@ -160,7 +178,17 @@ a {
     padding: 6px 12px;
     color: var(--second-color);
     background-color: var(--bg-headfoot);
-    font-weight: medium;
+    font-weight: 500;
+}
+
+@media (max-width:767px) {
+    .slogan{
+        font-size: 24px;
+    }
+    .series-text{
+        font-size: 16px;
+    }
+    
 }
 
 /* #endregion */
@@ -168,7 +196,8 @@ a {
 /* #region 用專業的心，做專業的事 */
 
 .four-column {
-    padding: 0px 12px;
+    width: calc( 25% - 18px );
+    /* padding: 0px 12px; */
     margin-bottom: 80px;
 }
 
@@ -191,6 +220,19 @@ a {
 
 .item_content {
     text-align: left;
+}
+
+@media (max-width:992px) {
+    .four-column{
+        width: calc( 50% - 12px); /* 每行兩個 共一個間隔24px， 所以24/2=12 */ 
+        /* width: 100%; */
+    }
+}
+
+@media (max-width:576px){
+    .four-column{
+        width: 100%;
+    }
 }
 
 /* #endregion */
@@ -280,6 +322,7 @@ input,
 textarea,
 button {
     display: block;
+    
 }
 
 label {
@@ -289,11 +332,26 @@ label {
 input {
     width: 100%;
     margin-bottom: 16px;
+    border: 1px solid #000000;
+    padding: 6px 0px 6px 12px;
+}
+
+input::placeholder {
+    color: #000000;    
+    opacity:0.2;
 }
 
 textarea {
     width: 100%;
     margin-bottom: 16px;
+    border: 1px solid #000000;
+    padding-top: 6px;
+    padding-left: 12px;
+}
+
+textarea::placeholder {
+    color: #000000;    
+    opacity:0.2;
 }
 
 .form-privacy {
@@ -310,6 +368,7 @@ button {
     font-size: 24px;
     font-weight: bold;
     border: 0;
+    cursor: pointer;
 }
 
 /* #endregion */
