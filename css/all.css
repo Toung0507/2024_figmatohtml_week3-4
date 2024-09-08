@@ -53,16 +53,26 @@ a {
     padding: 0px 12px;
 }
 
+@media (max-width:992px) {
+    .container {
+        max-width: 720px;
+        /* 因為盒模型加上padding值，所以會是內容的寬度696+左右各12px等於720px */
+    }
+}
 
-@media (max-width:767px) {
+@media (max-width:576px) {
     .container {
         max-width: 372px;
         padding: 0;
     }
 }
 
+.p-0{
+    padding: 0;
+}
+
 .row {
-    margin: 0px -12px;
+    /* margin: 0px -12px; */
 }
 
 .h4 {
@@ -74,9 +84,11 @@ a {
     margin-bottom: 48px;
 }
 
-@media (max-width:767px) {
+@media (max-width:567px) {
     .h4 {
         font-size: 24px;
+        padding-top: 40px;
+        margin-bottom: 24px;
     }
 }
 
@@ -156,6 +168,17 @@ a {
     background-size: cover;
 }
 
+@media (max-width:992px) {
+    .banner{
+        background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true");
+    }
+    .b{
+        max-width: 1320px;
+    }
+    
+}
+
+
 .banner-text {
     height: 100%;
     flex-direction: column;
@@ -181,7 +204,7 @@ a {
     font-weight: 500;
 }
 
-@media (max-width:767px) {
+@media (max-width:576px) {
     .slogan{
         font-size: 24px;
     }
@@ -225,13 +248,13 @@ a {
 @media (max-width:992px) {
     .four-column{
         width: calc( 50% - 12px); /* 每行兩個 共一個間隔24px， 所以24/2=12 */ 
-        /* width: 100%; */
     }
 }
 
 @media (max-width:576px){
     .four-column{
         width: 100%;
+        margin-bottom: 40px;
     }
 }
 
@@ -240,6 +263,7 @@ a {
 /* #region 經典系列鏡框 */
 
 .three-column {
+    width: calc( 33% - 16px );
     padding: 0px 12px;
 }
 
@@ -248,18 +272,26 @@ a {
     margin-bottom: 80px;
 }
 
+@media (max-width:992px) {
+    .three-column{
+        width: 100%;
+    }
+    .three-card-title {
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
+}
+
 /* #endregion */
 
 /* #region 聯名設計鏡框 */
 
 .joint_namebg {
     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
-    height: 608px;
 }
 
-.two-column img {
-    max-width: 648px;
-    height: 240px;
+.two-column {
+    max-width: 50%;
 }
 
 .joint_title {
@@ -270,6 +302,16 @@ a {
     padding: 0px 8px;
     background-color: var(--second-color);
     font-style: italic;
+    margin-bottom: 80px;
+}
+
+@media (max-width:992px) {
+    .two-column{
+        max-width: 100%;
+    }
+    .one{
+        margin-bottom: 24px;
+    }
 }
 
 /* #endregion */
@@ -280,8 +322,8 @@ a {
     box-shadow: 0px 2px 6px #DEE2E6;
 }
 
-.customer img {
-    max-width: 306px;
+.customer{
+    /* max-width: 306px;     */
     margin: 0;
 }
 
