@@ -44,7 +44,6 @@ a {
 .d-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .container {
@@ -72,7 +71,7 @@ a {
 }
 
 .row {
-    /* margin: 0px -12px; */
+    margin: 0px -12px;
 }
 
 .h4 {
@@ -219,8 +218,8 @@ a {
 /* #region 用專業的心，做專業的事 */
 
 .four-column {
-    width: calc( 25% - 18px );
-    /* padding: 0px 12px; */
+    width: 25%;
+    padding: 0px 12px;
     margin-bottom: 80px;
 }
 
@@ -247,7 +246,7 @@ a {
 
 @media (max-width:992px) {
     .four-column{
-        width: calc( 50% - 12px); /* 每行兩個 共一個間隔24px， 所以24/2=12 */ 
+        width: 50%; /* 每行兩個 共一個間隔24px， 所以24/2=12 */ 
     }
 }
 
@@ -263,7 +262,7 @@ a {
 /* #region 經典系列鏡框 */
 
 .three-column {
-    width: calc( 33% - 16px );
+    width: 33.333%;
     padding: 0px 12px;
 }
 
@@ -288,6 +287,11 @@ a {
 
 .joint_namebg {
     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+}
+
+.dd{
+    width: 100%;
+    margin: 0;
 }
 
 .two-column {
@@ -317,29 +321,52 @@ a {
 /* #endregion */
 
 /* #region 顧客推薦 */
-.customer {
+.customer{
+
+    /* height: 511px; */
+
+}
+
+
+.customer-card {
     text-align: left;
     box-shadow: 0px 2px 6px #DEE2E6;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .customer img{
-    /* max-width: 306px;     */
+    max-width:100%;    
     margin: 0;
 }
 
 .customer-reviews {
     padding: 16px;
+    height: 205px;
 
 }
 
 .customer-name {
+    padding: 16px 16px 8px 16px;
     font-weight: 500;
-    padding-bottom: 8px;
+}
+
+.customer-content{
+    margin-bottom: 72px;
+    padding: 0px 16px 8px 16px;
 }
 
 .date {
-    padding-top: 72px;
+    padding: 0px 16px 0px 16px;
+    margin-top: auto;
     color: #707070;
+}
+
+@media (max-width:992px) {
+    .four-column{
+        margin-bottom: 24px;
+    }
 }
 
 /* #endregion */
@@ -357,6 +384,12 @@ form {
 .contact-content {
     margin-bottom: 24px;
     font-size: 20px;
+}
+
+@media (max-width:992px) {
+    .contact-content{
+        font-size: 16px;
+    }
 }
 
 label,
@@ -411,6 +444,19 @@ button {
     font-weight: bold;
     border: 0;
     cursor: pointer;
+}
+
+@media (max-width:992px) {
+    button{
+        padding: 16px 136px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:576px) {
+    button{
+        padding: 16px 142px;
+    }
 }
 
 /* #endregion */
