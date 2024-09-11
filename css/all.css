@@ -321,13 +321,6 @@ a {
 /* #endregion */
 
 /* #region 顧客推薦 */
-.customer{
-
-    /* height: 511px; */
-
-}
-
-
 .customer-card {
     text-align: left;
     box-shadow: 0px 2px 6px #DEE2E6;
